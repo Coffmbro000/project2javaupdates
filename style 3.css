@@ -1,0 +1,41 @@
+html{
+    background-color:black;
+}
+h1{
+    color:yellow;
+    border-radius:50px;
+    border:5px solid;
+    border-color:rgb(0, 0, 0);
+   text-align:center;
+   position:relative;
+   box-sizing:border-box;
+
+   
+ 
+
+}
+
+h3{
+    color:skyblue;;
+    
+}
+img{
+    float:left;
+    border:5px solid;
+    border-color:purple green red orange ;
+}
+p{
+    color:white;
+}
+.album{
+    float:right;
+    height:500px;
+    width:500px;
+    border-color: green red orange purple ;
+}
+ol{
+    color:white;
+}
+a{
+    color:yellow;
+}

@@ -1,0 +1,43 @@
+html{
+    background-color:rgb(0, 0, 0);
+}
+h1{
+    color:rgba(0, 255, 72, 0.663);
+    border-radius:50px;
+    border:5px solid;
+    border-color:rgb(0, 0, 0);
+   text-align:center;
+   position:relative;
+   box-sizing:border-box;
+
+   
+ 
+
+}
+
+h3{
+    color:skyblue;;
+    
+}
+img{
+    float:left;
+    border:5px solid;
+    border-color:rgba(255, 200, 0, 0.862) rgba(255, 0, 0, 0.891);
+    height:350px;
+    width:500px;
+}
+p{
+    color:white;
+}
+.album{
+    float:right;
+    height:500px;
+    width:500px;
+    border-color:red rgb(255,200,0,0.862);
+}
+ol{
+    color:white;
+}
+a{
+    color:rgb(0,255,72,0.663);
+}

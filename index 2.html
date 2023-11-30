@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+<body id="body">
+    <h1 id="title"><b>Van Halen</b></h1>
+    
+<img src="https://www.rollingstone.com/wp-content/uploads/2020/10/van-halen-charts.jpg" id="photo1" onclick = "changeColor3(this)">
+<h3>Who is "Van Halen"?</h3>
+<p>Van Halen was one of the greatest bands of the 80's hair metal era, Their music is so influential and is spread across all over pop-culture. They are well known for the unique
+    and fascinating instrumental styles, and most importantly the way they performed live and the energy they brought to shows.
+</p>
+<br>
+<h3> The History of Van Halen</h3>
+<p>Van Halen is an American Rock band that formed in Pasadena, California in 1973. Well known for brinign hard rock into the scene. The band was so impactful they were inducted into
+    the Rock n Roll Hall of Fame in 2007. From 74' to 85' the band was held together by Eddie Van Halen (guitarist), Alex Van Halen (Drummer), Michael Anthony (bassist/vocalist), and fianlly the front man of the band
+David Lee Roth (lead vocalist).  </p>
+    <p>Their debut album released in 1978 called "Van Halen". They would release more albums as the years went on. In 1985, David Lee Roth left the band leaving the band without a lead singer as he went on to pursue a solo career in the music scene.
+        The band eventually found a replacement for Roth that being Sammy Hagar, with Hagar now in the band they went on to release four platinum albums in the course of eleven years. In 1996 Hagar eventually parted ways with the band leaving them once again without a frontman for the band. Hagar was replaced with Gary Cherone who had a short run with 
+        the band as he eventually left a few years later in 1999. The band took a bit of a break for a couple of years until Hagar rejoined the band for tour in 03'. Sammy once again left the band two years later in 05' as Roth came back onto the scene rejoining the band after many years, however once Roth rejoined Michael Anthony left the band
+        and was replaced by Wolfgang Van Halen (Eddie's son) on the bass. The band continued for years until the tragic news spread across the world as Eddie Van Halen passed away in October 2020.
+    </p>
+<br>
+<img src="https://upload.wikimedia.org/wikipedia/en/0/0d/Van_Halen_album.jpg" class="album" id="photo2" onclick="changeColor2(this)">
+<h3>Discography</h3>
+<p>Van Halens debut album "Van Halen" released in 1978 containing some of their greatest hits including "Runnin' with the Devil" and "Jamies Cryin'". Only a year later would the band release their second studio album "Van Halen II" in March of 1979.
+    Their next big album released in 1984 only few days after New Years day. This is widely believed that this is their best piece of work as in this album they blended in pianos with the songs like "Jump" and "I'll Wait" something that they haven't expiermemted with before.
+
+</p>
+<h3>Most Streamed Songs (on Spotify)</h3>
+<ol>
+    <li >Jump</li>
+    <li >Panama</li>
+    <li >Runnin' with the Devil</li>
+    <li>You Really Got Me</li>
+    <li>Ain't Talkin'Bout Love</li>
+</ol>
+
+        
+<br>
+<h3>My Personal Favorites</h3>
+<p>Van Halen might be my favorite band of all time. The style and the way they play is so fascinating to me. They have so many iconic hits that are still used for media today likes Movies and TV. One of my favorite songs from them is 
+    "Dance the Night Away" the harmony of the other other members give a nice feeling to it. That song is more relaxed, one of my other favorite song from isnt as relaxed. It also involves no singing in it, that song is "Eruption" one of the greatest and most iconic guitar solo of all time.
+    They have a wide range of songs that you can always find something that you will enjoy. Another one of my favorites is "Mean Street" one of their hidden gems in their line up of hits. It doesnt get enough recognition as it does.
+</p>
+<br>
+<h3>
+    Other Bands
+</h3>
+<a href="/Users/COFFMBRO000/Library/CloudStorage/OneDrive-HamiltonSoutheasternSchools/Website Dev/project 2 styles/index.html" id="colorText1">The Eagles</a>
+<button style= 'color:blue' onclick = "changeColor('blue')"> Blue</button>
+<br>
+<br>
+<a href="/Users/COFFMBRO000/Library/CloudStorage/OneDrive-HamiltonSoutheasternSchools/Website Dev/project 2 styles/index 3.html" id="colorText2">Pink Floyd</a>
+<button style = 'color:purple' onclick = "changeColor('purple')"> Purple</button>
+</body>
+<script>
+    alert("Welcome to my webpage");
+            
+
+            var color1=document.getElementById("title");
+            color1.setAttribute("style", "background-color: " + prompt("what color do you want to change the title to?"));
+
+            var color2=document.getElementById("body");
+            color2.setAttribute("style", "background-color: " + prompt("what color do you want to change the body to?"));
+
+            function changeColor(colors)
+            {
+                document.getElementById('colorText1').style.color = colors;
+                document.getElementById('colorText2').style.color = colors;
+            }
+
+            var olList = document.getElementsByTagName("li");
+		     
+		     for(var i = 0; i < olList.length; i++)
+		    {
+		        olList[i].addEventListener("click", crossOff);
+		    }
+		    function crossOff(){
+		       if(this.getAttribute("style")=="text-decoration:line-through"){
+		           this.removeAttribute("style");
+		       }else{
+		           this.setAttribute("style","text-decoration:line-through");
+		       }    
+		       
+		    }
+
+            function changeColor3(){
+		        photo1.setAttribute("style", "border-color: " + prompt("add Color"));
+            }
+
+            function changeColor2(){
+		        photo2.setAttribute("style", "border-color: " + prompt("add Color"));
+		    }
+
+    	    document.body.addEventListener("keydown", keyAlert);
+    	  
+          function keyAlert(event){
+              alert("You pressed the" + event.code + "button");
+          }
+
+
+
+
+          var para = document.createElement("h4");
+          para.innerHTML="This webpage was created by Brogan Coffman (17), Junior at FHS. Brogan likes music a lot, here is some of his stats from 2023 according to Spotify Wrap of this year. He listened to a total of 74 genres. Played 2,078 songs in 2023. Listened for a total of 87,214 minutes (60 days non-stop). Listened to 1,050 artists. His top artist included Tame Impala (who he was in the top 0.005% of listeners and listened for a total of 17,047 minutes), Pink Floyd, Van Halen, and Toto. Spotify came to the conclusion and labeled him as a 'Time Traveller' as he liked to listen to songs on repeat over and over again. "
+
+            document.body.appendChild(para);
+
+
+
+        
+
+
+
+
+          
+
+</script>
+</html>

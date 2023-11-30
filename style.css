@@ -1,0 +1,46 @@
+html{
+    background-color:grey
+}
+h1{
+    color:maroon;
+    border-radius:50px;
+    border:5px solid;
+    border-color:rgb(176,129,49);
+   text-align:center;
+   position:relative;
+   box-sizing:border-box;
+
+   
+ 
+
+}
+
+h3{
+    color:rgb(3,80,31);;
+    
+}
+img{
+    float:left;
+    border:5px solid;
+    border-color:rgb(3, 80, 21) maroon;
+    height:350px;
+    width:500px;
+}
+p{
+    color:black;
+}
+.album{
+    float:right;
+    height:450px;
+    width:450px;
+    border-color:maroon rgb(3,80,21);
+}
+ol{
+    color:white;
+}
+a{
+    color:maroon;
+}
+li{
+    color:rgb(0, 0, 0);
+}

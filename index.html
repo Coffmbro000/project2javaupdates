@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+<body id="body">
+    <h1 id="title"><b>The Eagles</b></h1>
+    
+<img src="https://arc-anglerfish-arc2-prod-tronc.s3.amazonaws.com/public/LDA2PO3OFFAF7MJOJAHC2TQ2PY.jpg" id="photo2" onclick="changeColor2(this)">
+<h3>Who are "The Eagles"?</h3>
+<p>The Eagles is an American Rock band that were very popular in the 70's just like Pink Floyd. They are very well known as they helped establish country rock
+    genre into the mainstream
+</p>
+<h3> The History of the Eagles</h3>
+<p>The Band formed in the year of 1971 in the city of Los Angeles.</p>
+    <p> Founded by Glenn Frey (Guitarist/Vocalist), Don Henley (Drummer/Vocalist), Bernie Leadon (Guitars/Vocalist), and Randy Meisner(Bass Guitar/Vocalist). They debuted with their album called "Eagles"
+        (1972) with two hit singles that both were in the top 20 hits in the United States and Canada. Those hit singles being "Take it Easy" and "Witchy Women". In the year of 1974
+    a new guitarist joined the band that being Don Felder. As years went by they continued to release many hit singles and albums, such as the single
+"One of These Nights" and another album being "Hotel California" probably one of the most iconic albums of all time. </p>
+<br>
+<img src="https://upload.wikimedia.org/wikipedia/en/4/49/Hotelcalifornia.jpg" class="album" id="photo1" onclick="changeColor3(this)">
+<br>
+<h3>Discography</h3>
+<p>The Eagles  released quite a few albums throughout the years of their career, Like mentioned before they debuted with the album "Eagles" in (1972). Only one year later
+    they would put out their second studio album "Desperado", although it wasn't as popular as their previous album and the ones to come it still managed to get in the top 40 albums. In 1975 the band would
+    release their third album "One of These Nights" and then only a year after that they would debut one of best selling albums of all time "Hotel California" in 1976 being considered one of the best albums of all Time.
+</p>
+<h3>Most Streamed Songs (on Spotify)</h3>
+<ol>
+    <li>Hotel California</li>
+    <li>Take it Easy</li>
+    <li>One of These Nights</li>
+    <li>Life in the Fast Lane</li>
+    <li>Peaceful Easy Feeling</li>
+</ol>
+<br>
+<h3>My Personal Favorites</h3>
+<p>My favorite Eagles song is "Hotel California" without a doubt, the melody of the song is so smoothing and has one of the best guitar solos of all Time.
+    Another one of my favorite songs is "Nightingale" its a nice song to drive to at night. A lot of the eagles songs are different from a lot of rock as it isn't to fast paced and isn't to slow. Giving it a nice
+    feeling to the songs. Without a doubt the Eagles are one of the most iconic bands of all time, they will have a permanent impact on music as a whole.
+</p>
+<br>
+<h3>
+    Other Bands
+</h3>
+<a href="/Users/COFFMBRO000/Library/CloudStorage/OneDrive-HamiltonSoutheasternSchools/Website Dev/project 2 styles/index 3.html" id="colorText1">Pink Floyd</a>
+<button style= 'color:blue' onclick = "changeColor('blue')"> Blue</button>
+<br>
+<br>
+<a href="/Users/COFFMBRO000/Library/CloudStorage/OneDrive-HamiltonSoutheasternSchools/Website Dev/project 2 styles/index 2.html" id="colorText2">Van Halen</a>
+<button style= 'color:red' onclick = "changeColor('red')"> Red</button>
+
+</body>
+<script>
+    alert("Welcome to my webpage");
+            
+
+            var color1=document.getElementById("title");
+            color1.setAttribute("style", "background-color: " + prompt("what color do you want to change the title to?"));
+
+            var color2=document.getElementById("body");
+            color2.setAttribute("style", "background-color: " + prompt("what color do you want to change the body to?"));
+
+            function changeColor(colors)
+            {
+                document.getElementById('colorText1').style.color = colors;
+                document.getElementById('colorText2').style.color = colors;
+            }
+
+            var olList = document.getElementsByTagName("li");
+		     
+		     for(var i = 0; i < olList.length; i++)
+		    {
+		        olList[i].addEventListener("click", crossOff);
+		    }
+		    function crossOff(){
+		       if(this.getAttribute("style")=="text-decoration:line-through"){
+		           this.removeAttribute("style");
+		       }else{
+		           this.setAttribute("style","text-decoration:line-through");
+		       }    
+		       
+		    }
+
+            function changeColor3(){
+		        photo1.setAttribute("style", "border-color: " + prompt("add Color"));
+            }
+
+            function changeColor2(){
+		        photo2.setAttribute("style", "border-color: " + prompt("add Color"));
+		    }
+
+    	    document.body.addEventListener("keydown", keyAlert);
+    	  
+          function keyAlert(event){
+              alert("You pressed the" + event.code + "button");
+
+
+
+             
+          }
+
+          var para = document.createElement("h4");
+          para.innerHTML="This webpage was created by Brogan Coffman (17), Junior at FHS. Brogan likes music a lot, here is some of his stats from 2023 according to Spotify Wrap of this year. He listened to a total of 74 genres. Played 2,078 songs in 2023. Listened for a total of 87,214 minutes (60 days non-stop). Listened to 1,050 artists. His top artist included Tame Impala (who he was in the top 0.005% of listeners and listened for a total of 17,047 minutes), Pink Floyd, Van Halen, and Toto. Spotify came to the conclusion and labeled him as a 'Time Traveller' as he liked to listen to songs on repeat over and over again. "
+
+            document.body.appendChild(para);
+
+</script>
+</html>

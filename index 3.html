@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+<body id="body">
+    <h1 id="title"><b> Pink Floyd</b></h1>
+    
+<img src="https://cdn.britannica.com/64/23164-050-A7D2E9D9/Pink-Floyd.jpg?w=400&h=300&c=crop" id="photo1" onclick="changeColor3(this)">
+<h3>Who is "Pink Floyd"?</h3>
+<p>Pink Floyd is a Psychedelic rock band who were very popular in 70's, they released many hits trhoughout their time. They were very different from many bands\
+    with their long durations of their songs and the ways they expierenced with different techniques to create a psychedlic feel to them.
+</p>
+<br>
+<h3> The History of Pink Floyd</h3>
+<p>Pink Floyd started in London in the year of 1965, they were one of the first British psych bands to join the scene. 
+    Founded by Syd Barret (lead vocalist/guitarist), Nick Mason (Drums), Roger Waters(bass guitar/vocals), and finally Richard Wright(keyboards/vocals)</p>
+    <p> They debuted onto the scene with two singles that were recieved very well and their debut album "The Piper at the Gates of Dawn".
+ years later in 1968 Guitarist and Vocalist "David Gilmour" would replace former member Syd Barret due to mental health issues. As years moved on Waters became
+a huge part in the massive success of the band as he wrote most the lyrics for many hits. Throughout the 70's Pink Floyd dominated the psych rock scene
+releasing many hit albums.</p>
+<br>
+<img src="https://www.zeiss.com/content/dam/pla/images/shows/pink-floyd_dark-side-of-the-moon.jpg" class="album" id="photo2" onclick="changeColor2(this)">
+<h3>Discography</h3>
+<p>Pink Floyd released many hit albums that are so iconic that they are still enjoyed to this day from the new generations. Some of their memorable albums
+    include "The Darkside of the Moon" (1973), "Wish You Were Here"(1975), "Animals"(1977), and finally "The Wall"(1979).
+</p>
+<h3>Most Streamed Songs (on Spotify)</h3>
+<ol>
+    <li>Another Brick in the Wall Pt.2</li>
+    <li>Wish You Were Here</li>
+    <li>Comfortably Numb</li>
+    <li>Breathe (In the Air)</li>
+    <li>The Great Gig in the Sky</li>
+</ol>
+<br>
+<h3>My Personal Favorites</h3>
+<p>I was suprised to find out those were the most streamed of the songs, considering the ones I'm going to list I here get talked about a lot more than those,
+    two of my favorite songs from "The Darkside of the Moon" are "Time" and "Money" as the guiatr solos make those songs special and give a groovy vibe to them.
+    Another hit I really enjoy is "Shine on You Crazy Diamond(Pt. 1-5)", this song is 15 minutes long but the duration is well worth it. The slow start at the beginning to leading into long guitar solos give it
+    a peaceful and melodic vibe to it.
+</p>
+<br>
+<h3>
+    Other Bands
+</h3>
+<a href="/Users/COFFMBRO000/Library/CloudStorage/OneDrive-HamiltonSoutheasternSchools/Website Dev/project 2 styles/index.html" id="colorText1">The Eagles</a>
+<button style = 'color:red' onclick = "changeColor('red')"> Red</button>
+<br>
+<br>
+<a href="/Users/COFFMBRO000/Library/CloudStorage/OneDrive-HamiltonSoutheasternSchools/Website Dev/project 2 styles/index 2.html" id="colorText2">Van Halen</a>
+<button style = 'color:yellow' onclick = "changeColor('yellow')"> Yellow</button>
+</body>
+<script>
+    alert("Welcome to my webpage");
+            
+
+            var color1=document.getElementById("title");
+            color1.setAttribute("style", "background-color: " + prompt("what color do you want to change the title to?"));
+
+            var color2=document.getElementById("body");
+            color2.setAttribute("style", "background-color: " + prompt("what color do you want to change the body to?"));
+
+            function changeColor(colors)
+            {
+                document.getElementById('colorText1').style.color = colors;
+                document.getElementById('colorText2').style.color = colors;
+            }
+
+            var olList = document.getElementsByTagName("li");
+		     
+		     for(var i = 0; i < olList.length; i++)
+		    {
+		        olList[i].addEventListener("click", crossOff);
+		    }
+		    function crossOff(){
+		       if(this.getAttribute("style")=="text-decoration:line-through"){
+		           this.removeAttribute("style");
+		       }else{
+		           this.setAttribute("style","text-decoration:line-through");
+		       }    
+		       
+		    }
+
+            function changeColor3(){
+		        photo1.setAttribute("style", "border-color: " + prompt("add Color"));
+            }
+
+            function changeColor2(){
+		        photo2.setAttribute("style", "border-color: " + prompt("add Color"));
+		    }
+
+    	    document.body.addEventListener("keydown", keyAlert);
+    	  
+          function keyAlert(event){
+              alert("You pressed the" + event.code + "button");
+
+
+
+             
+          }
+
+          var para = document.createElement("h4");
+          para.innerHTML="This webpage was created by Brogan Coffman (17), Junior at FHS. Brogan likes music a lot, here is some of his stats from 2023 according to Spotify Wrap of this year. He listened to a total of 74 genres. Played 2,078 songs in 2023. Listened for a total of 87,214 minutes (60 days non-stop). Listened to 1,050 artists. His top artist included Tame Impala (who he was in the top 0.005% of listeners and listened for a total of 17,047 minutes), Pink Floyd, Van Halen, and Toto. Spotify came to the conclusion and labeled him as a 'Time Traveller' as he liked to listen to songs on repeat over and over again. "
+
+            document.body.appendChild(para);
+
+</script>
+</html>
